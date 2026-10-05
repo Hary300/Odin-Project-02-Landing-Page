@@ -183,9 +183,14 @@ h2 {
   color: var(--color-primary-dark-gray);
   font-weight: 300;
   font-size: 36px;
+}
+
+.quote-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 #quote blockquote {
@@ -196,6 +201,35 @@ h2 {
   margin-left: auto;
   font-size: 28px;
   font-weight: 700;
+}
+
+#cta {
+  padding: 50px 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-primary-light-gray);
+}
+
+.cta-card {
+  background-color: var(--color-blue);
+  display: flex;
+  padding: 50px 100px;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cta-card button {
+  border: solid 2px white;
 }
 
 footer {
