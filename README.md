@@ -2,10 +2,6 @@
 
 A simple landing page built from scratch using **Vanilla HTML and CSS**.
 
-## Preview
-
-A landing page with a simple layout.
-
 ## Built With
 
 - HTML5
