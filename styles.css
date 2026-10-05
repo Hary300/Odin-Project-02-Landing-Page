@@ -56,6 +56,16 @@
   font-family: var(--font-type);
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(216, 216, 216);
+}
+
+.wrapper {
+  background-color: white;
+}
+
 ul,
 ol {
   list-style: none;
@@ -66,12 +76,22 @@ a {
   text-decoration: none;
 }
 
+button {
+  width: fit-content;
+  padding: 8px 28px;
+  border-radius: 8px;
+  background-color: var(--color-blue);
+  border: 0;
+  color: var(--color-secondary-light-gray);
+}
+
 header {
   background-color: var(--color-primary-dark-gray);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--color-primary-light-gray);
-  padding: 8px 120px;
+  padding: 8px 200px;
 }
 
 .logo {
@@ -88,7 +108,94 @@ header {
 
 #hero {
   background-color: var(--color-primary-dark-gray);
-  padding: 50px 120px;
+  padding: 50px 200px;
+  color: var(--color-secondary-light-gray);
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--color-primary-light-gray);
+  font-weight: 900;
+}
+
+#hero p {
+  font-size: 18px;
+}
+
+#information {
+  padding: 50px 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.card-container {
+  display: flex;
+  gap: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+}
+
+.img-container {
+  width: 120px;
+  height: 120px;
+  border: solid 2px var(--color-blue);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: contain;
+}
+
+#quote {
+  padding: 50px 200px;
+  background-color: var(--color-secondary-light-gray);
+  color: var(--color-primary-dark-gray);
+  font-weight: 300;
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+#quote blockquote {
+  font-style: italic;
+}
+
+#quote p {
+  margin-left: auto;
+  font-size: 28px;
+  font-weight: 700;
 }
 
 footer {
